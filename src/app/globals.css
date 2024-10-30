@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* button shine animation */
+  --btn-shadow: 1px 1px 25px 10px rgba(255, 255, 255, 0.5);
+
+  --shine-degree: 120deg;
+  --shine-color-primary: rgb(142, 213, 32);
+  --shine-color: rgb(255, 255, 255);
+
+  --shine-effect-test: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)),
+    --shine-effect: linear-gradient(var(--shine-degree),
+      transparent,
+      var(--shine-color),
+      transparent);
+  --shine-effect-primary: linear-gradient(var(--shine-degree),
+      transparent,
+      var(--shine-color-primary),
+      transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    rotate: 5deg;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+  }
+
+  &::before {
+    animation: shine 7s ease-in-out infinite;
+  }
+}
+
+.cr {
+  background: var(--shine-effect);
+  animation: shine .1s ease-in-out infinite;
+}
+
+/* .shine:hover::before {
+  background: var(--shine-effect-primary);
+  } */
+
+@keyframes shine {
+  0%,
+
+  70% {
+    left: -100%;
+    transition-property: left;
+  }
+
+  /* 20%, */
+  100% {
+    left: 100%;
+    transition-property: left;
+  }
+}
+
+/* glassmorphism */
+
+.glass {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* fade out up */
+
+.fade-out-up {
+  opacity: 0;
+  translate: 0 -100%;
+  transition: opacity .5s, translate 2.5s linear;
+}
+
+/* hang up*/
+
+.hanger-group:hover .hang-up {
+  /* margin-top: -20px; */
+  translate: 0 -20%;
+  transition: translate .5s linear;
+}
+
+.slider:hover .slide-up {
+  translate: 0 -50%;
+  bottom: 0;
+  transition: all .5s linear;
+}
+
+.slide-down {
+  transform: translateY(0);
+  bottom: 0;
+  transition: all .5s linear;
+}
+
+.slide-left {
+  translate: -100% 0;
+  bottom: 0;
+  transition: all .5s linear;
+}
+
+.github-work:hover .slide-right {
+  translate: 0 0;
+  bottom: 0;
+  transition: all .5s linear;
+}
