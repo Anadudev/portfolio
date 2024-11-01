@@ -64,6 +64,7 @@ export type work = {
   name: string;
   description?: string;
   link?: string;
+  github?: string;
   thumbnail?: string;
   tags?: tags[] | number[];
 };
