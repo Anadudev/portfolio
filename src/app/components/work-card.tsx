@@ -36,7 +36,7 @@ const WorkCard = (props: work) => {
                     </Link>
                     <div className="group overflow-hidden github-work">
                         <Link href={props.link || ''} className='flex group items-center border border-slate-300 dark:border-slate-700 text-sm  gap-3 w-fit px-3 py-1 transition-all ease-in-out'>
-                            <p className='tracking-wider dark:group-hover:text-primary'>View on GitHub</p>
+                            <Link href={props.github || '#'} className='tracking-wider dark:group-hover:text-primary'>View on GitHub</Link>
                             <BsGithub className=" dark:group-hover:text-primary" />
                         </Link>
                         <div className="group-hover:border slide-right border-primary slide-left"></div>

@@ -14,9 +14,6 @@ const Button = (props: ButtonPropTypes) => {
           <span className={``}> {props.icon || ''} {props?.text}
           </span>
         </button>
-        {/* {props.shadow && <span className={`relative -z-10`}>
-          <span className={`absolute group-hover:visible invisible blur-md bg-primary -z-1 -top-3 left-[50%] translate-x-[-50%] border w-full h-7`}></span>
-        </span>} */}
       </div>}
 
       {props.type === "linkOutline" && <div className={`flex flex-col size-fit text-center`}>

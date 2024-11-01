@@ -1,7 +1,22 @@
 import type { Metadata } from "next";
 import Root from "@/app/components/root";
+import localFont from "next/font/local";
+import "./globals.css";
 // react-tooltip injection
 import 'react-tooltip/dist/react-tooltip.css'
+
+
+
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 
 
@@ -17,9 +32,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100 dark:bg-slate-950 max-w-[96rem] mx-auto`}
+      >
         <Root >
-            {children}
+          {children}
         </Root >
+      </body>
     </html>
   );
 }

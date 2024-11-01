@@ -32,8 +32,8 @@ const ToolsSection = () => {
                         loop={true}
                         allowTouchMove={false}
                         autoplay={{ delay: 4000 }}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        // onSlideChange={() => console.log('slide change')}
+                        // onSwiper={(swiper) => console.log(swiper)}
                         className='h-36 mobile-lg:h-28 mobile-xlg:h-20 tablet-sm:h-28'
                     >
                         {quotes.map((quote, index) => <SwiperSlide className='animate-blur-to-clear z-10 text-2xl font-bold my-auto p-3' key={index}><p className=''>{quote.text}</p></SwiperSlide>)}

@@ -16,15 +16,15 @@ const HeroSection = () => {
                     <h1 className='font-bold text-3xl '>Hello</h1>
                     <h1 className='font-bold text-3xl mb-7 dark:text-white'>I&apos;m Godwin</h1>
                 </div>
-                <p className='text-xl text-pretty'>Full-stack <span className='dark:text-primary'>Software  engineer</span> with 3+ years of experience in crafting dynamic and responsive web applications.</p>
+                <p className='text-xl text-pretty'>Full-stack <span className='dark:text-primary'>Software  engineer</span> with 2+ years of experience in crafting dynamic and responsive web applications.</p>
             </div>
 
             <div className="her-actions flex items-center justify-center gap-4 mt-7">
                 {socials.map((social, index) => <Link key={index} href={social.link} target="_blank">
                     {<social.icon className='dark:bg-black dark:border border-slate-500 text-4xl rounded-lg hover:bg-primary hover:text-white bg-slate-200 p-2  hover:drop-shadow-xl transition-all eas-in-out' />}
                 </Link>)}
-
-                <Button text="lets talk" shine={true} type='buttonPrimary' style='px-3 py-2 dark:bg-white bg-primary before:bg-gradient-to-r from-primary dark:from-white rounded-lg hover:drop-shadow-xl transition-all eas-in-out' shadow={true} />
+                <Link href={`mailto:anadudev@gmail.com`}>
+                    <Button text="lets talk" shine={true} type='buttonPrimary' style='px-3 py-2 dark:bg-white bg-primary before:bg-gradient-to-r from-primary dark:from-white rounded-lg hover:drop-shadow-xl transition-all eas-in-out' shadow={true} /></Link>
             </div>
 
         </div>
