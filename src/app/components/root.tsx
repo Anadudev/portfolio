@@ -5,7 +5,7 @@ import Footer from "@/app/components/footer";
 
 
 const Root = ({ children }: { children: React.ReactNode }) => {
-    const localStorageTheme = localStorage.getItem("theme") || "light";
+    const localStorageTheme = typeof window !== 'undefined' && localStorage.getItem("theme") || "light";
     const [theme, setTheme] = useState(localStorageTheme);
 
     return (
