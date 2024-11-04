@@ -1,28 +1,18 @@
 import type { Metadata } from "next";
 import Root from "@/app/components/root";
-import localFont from "next/font/local";
 import "./globals.css";
 // react-tooltip injection
 import 'react-tooltip/dist/react-tooltip.css'
 
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 
 
 export const metadata: Metadata = {
-  title: "Anadu Portfolio",
-  description: "Anadu Godwin software developer portfolio",
+  title: "Anadu Godwin | Full-Stack Web Developer",
+  description: "Anadu Godwin a skilled full-stack web developer with a passion for crafting elegant and efficient web applications. Explore his portfolio of projects built with React, Node.js, and other cutting-edge technologies.",
+  keywords: "Anadu Godwin, Software Engineer, Full-Stack Web Developer, Web Developer,Python, Django, Typescript, Next.js, React, Node.js, Portfolio, Projects, Skills, Resume, Contact",
+  authors: [{ name: "Anadu Godwin" }]
 };
 
 export default function RootLayout({
@@ -32,13 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100 dark:bg-slate-950 max-w-[96rem] mx-auto`}
-      >
-        <Root >
-          {children}
-        </Root >
-      </body>
+      <Root >
+        {children}
+      </Root >
     </html>
   );
 }

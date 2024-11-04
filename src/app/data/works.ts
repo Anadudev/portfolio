@@ -3,7 +3,7 @@ export const works1 = [
     name: "Anadu Portfolio",
     description:
       "A personal portfolio website built with Next.js and Tailwind CSS.",
-    link: "https://anadu-portfolio.vercel.app/",
+    link: "https://anadu.vercel.app/",
     github: "https://anadu-portfolio.vercel.app/",
     thumbnail: "/works/work1.jpg",
     tags: [1, 2, 5, 11, 7, 9, 16],
@@ -39,7 +39,7 @@ export const works2 = [
     name: "Pristine",
     description:
       "A platform where you can book cleaners for your house, office space and more.",
-    link: "https://bookatpristine.vercel.app/",
+    link: "#",
     github: "#",
     thumbnail: "/works/work3.jpg",
     tags: [1, 3, 17, 15, 4, 5, 14],
