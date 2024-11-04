@@ -49,7 +49,7 @@ const Nav = ({ theme, setTheme }: NavProps) => {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light")
   };
-  if (typeof window !== 'undefined') localStorage.setItem("theme", theme);
+  localStorage.setItem("theme", theme);
 
   return (
     <nav className={`fixed w-full top-0 left-0 p-6 bg-transparent tablet:flex justify-between items-center z-50`}>
