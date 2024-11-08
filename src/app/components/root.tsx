@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from "@/app/components/nav";
 import Footer from "@/app/components/footer";
 import localFont from "next/font/local";
@@ -18,8 +18,18 @@ const geistMono = localFont({
 
 
 const Root = ({ children }: { children: React.ReactNode }) => {
-    const localStorageTheme = typeof window !== 'undefined' && localStorage.getItem("theme") || "light";
-    const [theme, setTheme] = useState(localStorageTheme);
+    const [theme, setTheme] = useState("light");
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+        const localStorageTheme = localStorage.getItem("theme") || "light";
+        setTheme(localStorageTheme);
+    }, []);
+
+    if (!isMounted) {
+        return null;
+    }
 
     return (
         <body
