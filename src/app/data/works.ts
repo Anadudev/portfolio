@@ -4,7 +4,7 @@ export const works1 = [
     description:
       "A personal portfolio website built with Next.js and Tailwind CSS.",
     link: "https://anadu.vercel.app/",
-    github: "https://anadu.vercel.app/",
+    github: "https://www.github.com/anadudev/portfolio",
     thumbnail: "/works/work1.jpg",
     tags: [1, 2, 5, 11, 7, 9, 16],
   },
