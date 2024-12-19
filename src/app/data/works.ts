@@ -39,8 +39,8 @@ export const works2 = [
     name: "Pristine",
     description:
       "A platform where you can book cleaners for your house, office space and more.",
-    link: "#",
-    github: "#",
+    link: "https://www.usepristinehq.com/",
+    github: "https://www.usepristinehq.com/",
     thumbnail: "/works/work3.jpg",
     tags: [1, 3, 17, 15, 4, 5, 14],
   },
