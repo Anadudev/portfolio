@@ -41,6 +41,7 @@ const BodySection = () => {
               name={work.name}
               link={work.link}
               description={work.description}
+              github={work.github}
               thumbnail={work.thumbnail}
               tags={getWorkTags(work?.tags as number[], categories)} />)
             }

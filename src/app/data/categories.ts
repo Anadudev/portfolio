@@ -16,4 +16,5 @@ export const categories = [
   { id: 15, text: "Nest", visible: true },
   { id: 16, text: "TailWind", visible: true },
   { id: 17, text: "Prisma", visible: true },
+  { id: 18, text: "Dashboard", visible: true },
 ];

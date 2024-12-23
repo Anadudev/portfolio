@@ -4,7 +4,7 @@ export const works1 = [
     description:
       "A personal portfolio website built with Next.js and Tailwind CSS.",
     link: "https://anadu.vercel.app/",
-    github: "https://www.github.com/anadudev/portfolio",
+    github: "https://github.com/Anadudev/portfolio",
     thumbnail: "/works/work1.jpg",
     tags: [1, 2, 5, 11, 7, 9, 16],
   },
@@ -40,10 +40,28 @@ export const works2 = [
     description:
       "A platform where you can book cleaners for your house, office space and more.",
     link: "https://www.usepristinehq.com/",
-    github: "https://www.usepristinehq.com/",
+    github: "#",
     thumbnail: "/works/work3.jpg",
     tags: [1, 3, 17, 15, 4, 5, 14],
   },
+  {
+    name: "",
+    description: "",
+    link: "",
+    github: "",
+    thumbnail: "",
+    tags: [],
+  },
+  {
+    name: "Porthree",
+    description:
+      "A personal portfolio management website built with react, Django and Tailwind CSS.",
+    link: "https://porthree-app.vercel.app/",
+    github: "https://github.com/Anadudev/porthree",
+    thumbnail: "/works/work-porthree.png",
+    tags: [1, 2, 3, 5, 12, 6, 16, 13, 10, 7],
+  },
+// props.github
   {
     name: "",
     description: "",
@@ -57,9 +75,9 @@ export const works2 = [
     description:
       "A mobile responsive CRM dashboard page .",
     link: "https://workgen.vercel.app/leads",
-    github: "https://github/anadudev/workgen",
+    github: "https://github.com/Anadudev/workgen",
     thumbnail: "/works/works4.png",
-    tags: [1, 2, 5, 7, 9, 16],
+    tags: [1, 2, 5, 7, 9, 16, 18],
   },
 
   {
