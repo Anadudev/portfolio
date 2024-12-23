@@ -53,13 +53,13 @@ export const works2 = [
     tags: [],
   },
   {
-    name: "Porthree",
+    name: "Workgen dashboard",
     description:
-      "A personal portfolio management website built with react, Django and Tailwind CSS.",
-    link: "https://porthree-app.vercel.app/",
-    github: "https://github/anadudev/porthree",
-    thumbnail: "/works/work-porthree.png",
-    tags: [1, 2, 3, 5, 12, 6, 16, 13, 10, 7],
+      "A mobile responsive CRM dashboard page .",
+    link: "https://workgen.vercel.app/leads",
+    github: "https://github/anadudev/workgen",
+    thumbnail: "/works/works4.png",
+    tags: [1, 2, 5, 7, 9, 16],
   },
 
   {
