@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div>
             <div className="her-image flex justify-center items-center">
 
-                <Image className=' rounded-full size-56 border-4 dark:border-slate-200 border-slate-300' alt='hero image' src={`/profile/profile.jpg`} width={100} height={100} ></Image>
+                <Image className=' rounded-full size-56 border-4 dark:border-slate-200 border-slate-300' alt='hero image' src={`/profile/hero-image.jpeg`} width={100} height={100} ></Image>
             </div>
             <div className="hero-text mt-4 text-center">
                 <div className="flex gap-3 justify-center">
