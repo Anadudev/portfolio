@@ -14,16 +14,16 @@ export const navItems = [
     new: true,
     link: "/experiences",
   },
-  // {
-  //   name: "About",
-  //   new: true,
-  //   link: "#about",
-  // },
-  // {
-  //   name: "Blog",
-  //   new: false,
-  //   link: "/blog",
-  // },
+  {
+    name: "Blog",
+    new: true,
+    link: "https://dev.to/anadudev",
+  },
+  {
+    name: "Github",
+    new: false,
+    link: "https://github.com/Anadudev/",
+  },
   // {
   //   name: "Contact",
   //   new: false,
