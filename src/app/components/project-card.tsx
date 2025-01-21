@@ -56,21 +56,23 @@ const WorkCard = (props: project) => {
             <p className="tracking-wider">Live Demo</p>
             <MdOutlineArrowOutward className="hang-up" />
           </Link>
-          <div className="group overflow-hidden github-project">
-            <Link
-              href={props.link || ""}
-              className="flex group items-center border border-slate-300 dark:border-slate-700 text-sm  gap-3 w-fit px-3 py-1 transition-all ease-in-out"
-            >
+          {props.github && (
+            <div className="group overflow-hidden github-project">
               <Link
-                href={props.github || "#"}
-                className="tracking-wider dark:group-hover:text-primary"
+                href={props.link || ""}
+                className="flex group items-center border border-slate-300 dark:border-slate-700 text-sm  gap-3 w-fit px-3 py-1 transition-all ease-in-out"
               >
-                View on GitHub
+                <Link
+                  href={props.github || "#"}
+                  className="tracking-wider dark:group-hover:text-primary"
+                >
+                  View on GitHub
+                </Link>
+                <BsGithub className=" dark:group-hover:text-primary" />
               </Link>
-              <BsGithub className=" dark:group-hover:text-primary" />
-            </Link>
-            <div className="group-hover:border slide-right border-primary slide-left"></div>
-          </div>
+              <div className="group-hover:border slide-right border-primary slide-left"></div>
+            </div>
+          )}
         </div>
       </div>
     </div>
