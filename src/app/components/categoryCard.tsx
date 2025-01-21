@@ -9,7 +9,7 @@ export const CategoryCardMobile = ({ data, setter, categoryCounts }: { data?: nu
             </div>
             <div className="">
                 <ul className="flex gap-3 flex-wrap">
-                    {categories.map((category, index) => <li onClick={() => setter(category.id)} key={index} className={`border  border-slate-300 dark:border-slate-700 text-sm capitalize rounded-lg px-3 py-1 cursor-pointer ${data === category.id && 'bg-primary'} hover:bg-primary transition-all ease-in-out hover:text-black hover:border-primary flex gap-1`}>
+                    {categories.map((category, index) => <li onClick={() => setter(category.id)} key={index} className={`border  border-slate-300 dark:border-slate-700 text-sm capitalize rounded-lg px-3 py-1 cursor-pointer ${data === category.id && 'bg-primary text-white font-semibold'} hover:bg-primary transition-all ease-in-out hover:text-black hover:border-primary flex gap-1`}>
                         <p className="">{category.text}</p>
                         <span>({categoryCounts && categoryCounts[category.id]?.count || 0})</span>
                     </li>)}
@@ -27,7 +27,7 @@ export const CategoryCardFull = ({ data, setter, categoryCounts }: { data?: numb
             </div>
             <div className="">
                 <ul className="flex flex-col gap-1">
-                    {categories.map((category, index) => <li key={index} onClick={() => setter(category.id)} className={`font-semibold text-sm capitalize rounded-lg px-3 py-1 cursor-pointer w-full hover:bg-primary transition-all ease-in-out hover:text-black hover:border-primary flex justify-between ${data === category.id && 'bg-primary'}`}>
+                    {categories.map((category, index) => <li key={index} onClick={() => setter(category.id)} className={`font-semibold text-sm capitalize rounded-lg px-3 py-1 cursor-pointer w-full hover:bg-primary transition-all ease-in-out hover:text-black hover:border-primary flex justify-between ${data === category.id && 'bg-primary text-white font-semibold'}`}>
                         <p className="">{category.text}</p>
                         <span>({categoryCounts && categoryCounts[category.id]?.count || 0})</span>
                     </li>)}
