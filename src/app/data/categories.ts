@@ -13,7 +13,7 @@ export const categories = [
   { id: 12, text: "full-stack", visible: false },
   { id: 13, text: "Django", visible: true },
   { id: 14, text: "NodeJs", visible: true },
-  { id: 15, text: "Nest", visible: true },
+  // { id: 15, text: "Nest", visible: true },
   { id: 16, text: "TailWind", visible: true },
   { id: 17, text: "Prisma", visible: true },
   { id: 18, text: "Dashboard", visible: true },
