@@ -10,7 +10,7 @@ const WorkCard = (props: project) => {
     <div className="slider transition-all duration-200 ease-out border hover:border-white hover:border-2 border-slate-300 dark:border-slate-700 rounded-xl">
       <div className="rounded-t-xl group">
         <Link href={props.link || ""} title="Visit Website">
-          <div className=" w-full ">
+          <div className=" w-full">
             <div
               className="relative aspect-video overflow-hidden cursor-pointer rounded-t-xl"
               title="Visit project"
@@ -26,10 +26,10 @@ const WorkCard = (props: project) => {
         </Link>
       </div>
       <div className="p-4 grid gap-2 pt-5">
-        <div className="flex gap-5 justify-between">
+        <div className="mobile-lg:flex gap-4 justify-between">
           <h3 className="text-2xl font-bold ">{props.name}</h3>
           <div className="">
-            <ul className="flex gap-3 flex-wrap">
+            <ul className="flex gap-2 flex-wrap">
               {props?.tags?.map((tag, index: number) => (
                 <li key={index} className="">
                   {(tag as tags).visible && (
