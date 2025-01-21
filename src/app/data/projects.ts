@@ -36,7 +36,7 @@ export const works1 = [
 
 export const works2 = [
   {
-    name: "MiratTends",
+    name: "MiraTends",
     description:
       "A comprehensive online market place where you can buy, sell and manage products.",
     link: "https://mira-trends.vercel.app/",
