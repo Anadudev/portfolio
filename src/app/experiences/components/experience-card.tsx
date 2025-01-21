@@ -13,21 +13,21 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
-    <div className="border rounded-xl border-slate-300 p-2 mobile-sm:p-4 space-y-2 flex flex-wrap max-w-[50rem]">
-      <div className="mobile-sm:flex flex-1 justify-between items-center">
+    <div className="border rounded-xl mobile-sm:border-2 dark:border-slate-700 border-slate-300 p-2 mobile-sm:p-4 space-y-2 flex flex-wrap max-w-[50rem]">
+      <div className="mobile-sm:flex flex-wrap gap-2 flex-1 justify-between items-center">
         <div className="">
           <div className="flex gap-2">
             <span className="text-primary">Company:</span>
-            <h2 className="">{experience.company}</h2>
+            <h2 className="text-nowrap">{experience.company}</h2>
           </div>
           <div className="flex gap-2">
             <span className="text-primary">Role:</span>
-            <h3 className="">{experience.role}</h3>
+            <h3 className="text-nowrap">{experience.role}</h3>
           </div>
         </div>
         <div className="flex mobile-sm:block gap-2">
           <span className="text-primary">Date:</span>
-          <div className="">{experience.date}</div>
+          <div className="text-nowrap">{experience.date}</div>
         </div>
       </div>
       <div className="">
