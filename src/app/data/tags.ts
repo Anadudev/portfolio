@@ -9,7 +9,7 @@ export const heroAboutTags = [
   },
   {
     id: 3,
-    tex: "Database",
+    text: "Database",
   },
   {
     id: 4,
