@@ -11,7 +11,7 @@ export const navItems = [
   },
   {
     name: "Experience",
-    new: false,
+    new: true,
     link: "/experiences",
   },
   // {
