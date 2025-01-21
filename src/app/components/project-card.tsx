@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import Image from 'next/image';
-import { tags, work } from '@/app/types/types';
+import { tags, project } from '@/app/types/types';
 
-const WorkCard = (props: work) => {
+const WorkCard = (props: project) => {
     return (
         <div className="slider border  border-slate-300 dark:border-slate-700 rounded-xl">
             <div className="h-96 relative overflow-hidden rounded-t-xl">
@@ -34,7 +34,7 @@ const WorkCard = (props: work) => {
                         <p className='tracking-wider'>Live Demo</p>
                         <MdOutlineArrowOutward className="hang-up" />
                     </Link>
-                    <div className="group overflow-hidden github-work">
+                    <div className="group overflow-hidden github-project">
                         <Link href={props.link || ''} className='flex group items-center border border-slate-300 dark:border-slate-700 text-sm  gap-3 w-fit px-3 py-1 transition-all ease-in-out'>
                             <Link href={props.github || '#'} className='tracking-wider dark:group-hover:text-primary'>View on GitHub</Link>
                             <BsGithub className=" dark:group-hover:text-primary" />

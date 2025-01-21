@@ -1,13 +1,13 @@
-import { work } from "@/app/types/types";
+import { project } from "@/app/types/types";
 import { categoriesCountInterface } from "@/app/types/types";
 
 export const countTags = (
-    allWorks: work[],
+    allWorks: project[],
     categoriesCount: categoriesCountInterface
 ) => {
-    allWorks.forEach((work) => {
-        if (work.name != "") {
-            (work.tags as number[])?.forEach((categoryId) => {
+    allWorks.forEach((project) => {
+        if (project.name != "") {
+            (project.tags as number[])?.forEach((categoryId) => {
                 if (categoriesCount[categoryId]) {
                     categoriesCount[categoryId].count += 1;
                 } else {

@@ -2,7 +2,7 @@ import HeroSection from "@/app/sections/hero-section";
 import ExtraSection from "@/app/sections/extra-section";
 import AboutSection from "@/app/sections/about-section";
 import ToolsSection from "@/app/sections/tools-section";
-import WorksSection from "@/app/sections/works-section";
+import WorksSection from "@/app/sections/projects-section";
 
 export default function Home() {
   return (

@@ -25,7 +25,7 @@ Contains reusable UI components.
 
 ### data
 
-Contains data used throughout the application, including works, tags, and social media links.
+Contains data used throughout the application, including projects, tags, and social media links.
 
 ### lib
 
@@ -33,7 +33,7 @@ Contains utility functions used throughout the application.
 
 ### sections
 
-Contains larger sections of the application, including the hero section, about section, and works section.
+Contains larger sections of the application, including the hero section, about section, and projects section.
 
 ### types
 
@@ -41,10 +41,10 @@ Contains type definitions for the application.
 
 ## Features
 
-* Personal portfolio website with a hero section, about section, and works section.
+* Personal portfolio website with a hero section, about section, and projects section.
 * Uses Next.js for server-side rendering and static site generation.
 * Uses Tailwind CSS for styling.
-* Includes a works section with infinite scrolling and filtering by tag.
+* Includes a projects section with infinite scrolling and filtering by tag.
 * Includes a tools section with a list of technologies used in the project.
 
 ## Dependencies

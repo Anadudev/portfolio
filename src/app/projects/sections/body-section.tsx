@@ -1,24 +1,24 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { CategoryCardMobile, CategoryCardFull } from '@/app/components/categoryCard';
-import { allWorks } from '@/app/data/works';
-import WorkCard from '@/app/components/work-card';
+import { allWorks } from '@/app/data/projects';
+import WorkCard from '@/app/components/project-card';
 import { categories } from '@/app/data/categories';
-import { work } from '@/app/types/types';
+import { project } from '@/app/types/types';
 import { categoriesCountInterface } from "@/app/types/types";
 import { countTags } from '@/app/lib/count-tags';
-import { getWorkTags } from '@/app/lib/get-work-tags';
+import { getWorkTags } from '@/app/lib/get-project-tags';
 
 const BodySection = () => {
   const [workFilter, setWorkFilter] = useState(1);
-  const [works, setWorks] = useState<work[]>([]);
+  const [projects, setWorks] = useState<project[]>([]);
   const filterSetter = (value: number) => (setWorkFilter(value));
   const categoriesCount: categoriesCountInterface = {};
 
   useEffect(() => {
     /**
      * Function to filter allWorks based on the current category filter
-     * and updates the works state with the filtered array.
+     * and updates the projects state with the filtered array.
      */
     const handleWorks = () => {
       const worksFiltered = allWorks.filter((wk) => wk.tags.includes(workFilter))
@@ -36,14 +36,14 @@ const BodySection = () => {
         <CategoryCardFull setter={filterSetter} data={workFilter} categoryCounts={categoriesCount} />
         <div className="max-w-[80rem]">
           <div className="grid gap-7 px-7 tablet:grid-cols-2">
-            {works.map((work, index) => work.name && <WorkCard
+            {projects.map((project, index) => project.name && <WorkCard
               key={index}
-              name={work.name}
-              link={work.link}
-              description={work.description}
-              github={work.github}
-              thumbnail={work.thumbnail}
-              tags={getWorkTags(work?.tags as number[], categories)} />)
+              name={project.name}
+              link={project.link}
+              description={project.description}
+              github={project.github}
+              thumbnail={project.thumbnail}
+              tags={getWorkTags(project?.tags as number[], categories)} />)
             }
           </div>
         </div>

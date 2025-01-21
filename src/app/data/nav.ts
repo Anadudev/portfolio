@@ -5,9 +5,14 @@ export const navItems = [
     link: "/",
   },
   {
-    name: "Work",
+    name: "Projects",
     new: false,
-    link: "/work",
+    link: "/projects",
+  },
+  {
+    name: "Experience",
+    new: false,
+    link: "/projects",
   },
   // {
   //   name: "About",
@@ -18,11 +23,6 @@ export const navItems = [
   //   name: "Blog",
   //   new: false,
   //   link: "/blog",
-  // },
-  // {
-  //   name: "Projects",
-  //   new: true,
-  //   link: "/projects",
   // },
   // {
   //   name: "Contact",

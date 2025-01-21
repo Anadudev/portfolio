@@ -1,11 +1,11 @@
 import { tags } from "@/app/types/types";
 
 /**
- * Filters an array of tags based on the given array of work categories.
+ * Filters an array of tags based on the given array of project categories.
  *
  * @param {tags[]} categories - The array of tags to filter.
- * @param {number[]} workCategories - The array of category IDs of the work.
- * @returns {tags[]} A filtered array of tags that match the work categories.
+ * @param {number[]} workCategories - The array of category IDs of the project.
+ * @returns {tags[]} A filtered array of tags that match the project categories.
  */
 export const getWorkTags = (
   workCategories: Array<number>,

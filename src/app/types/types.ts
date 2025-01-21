@@ -60,7 +60,7 @@ export type tags = {
   visible?: boolean;
 };
 
-export type work = {
+export type project = {
   name: string;
   description?: string;
   link?: string;
@@ -70,7 +70,7 @@ export type work = {
 };
 
 export type WorksInfiniteScrollProps = {
-  item: work[];
+  item: project[];
   reverse?: boolean;
 };
 

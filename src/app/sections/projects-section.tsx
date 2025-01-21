@@ -1,7 +1,7 @@
 import React from 'react';
 import SubTitle from '@/app/components/subheading';
-import WorksInfiniteScroll from '@/app/components/works-infinite-scroll';
-import { works1, works2 } from '@/app/data/works';
+import WorksInfiniteScroll from '@/app/components/projects-infinite-scroll';
+import { works1, works2 } from '@/app/data/projects';
 import { FaLaptopCode } from "react-icons/fa";
 import { FaRegDotCircle } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
@@ -13,7 +13,7 @@ const WorksSection = () => {
     return (
         <div className='mt-14'>
             <div className="px-4">
-                <SubTitle text='My Works' icon={FaLaptopCode} />
+                <SubTitle text='My Projects' icon={FaLaptopCode} />
             </div>
             <div className="grid gap-4 pt-8">
                 <div className="grid">
@@ -22,7 +22,7 @@ const WorksSection = () => {
                         <WorksInfiniteScroll item={works2} reverse={true} />
                     </div>
                     <div className="w-fit justify-self-end group hanger-group overflow-hidden">
-                        <Link href="/work" className='flex text-sm gap-3 w-fit pt-3 transition-all ease-in-out group-hover:text-primary'>
+                        <Link href="/projects" className='flex text-sm gap-3 w-fit pt-3 transition-all ease-in-out group-hover:text-primary'>
                             <p className='tracking-wider dark:text-white'>Explore more</p>
                             <MdOutlineArrowOutward className="hang-up"/>
                         </Link>
@@ -33,7 +33,7 @@ const WorksSection = () => {
                     <div className=" mt-28 mb-20 ">
                         <Link className=' flex border group border-primary rounded-xl px-3 py-2 items-center gap-3 w-fit mx-auto' href="mailto:anadudev@gmail.com" target="_blank">
                             <FaRegDotCircle className='text-primary animate-pulse ' />
-                            <p className='tracking-widest'>Open for work: Full time/remote</p>
+                            <p className='tracking-widest'>Open for project: Full time/remote</p>
                             <FaLocationArrow className="group-hover:text-primary transition-colors ease-in-out"/>
                         </Link>
                     </div>
