@@ -9,9 +9,9 @@ import 'react-tooltip/dist/react-tooltip.css'
 
 
 export const metadata: Metadata = {
-  title: "Anadu Godwin | Full-Stack Web Developer",
-  description: "Anadu Godwin a skilled full-stack web developer with a passion for crafting elegant and efficient web applications. Explore his portfolio of projects built with React, Node.js, and other cutting-edge technologies.",
-  keywords: "Anadu Godwin, Software Engineer, Full-Stack Web Developer, Web Developer,Python, Django, Typescript, Next.js, React, Node.js, Portfolio, Projects, Skills, Resume, Contact",
+  title: "Anadu Godwin | Software Engineer",
+  description: "Anadu Godwin a skilled full-stack software engineer with a passion for crafting elegant and efficient web applications. Explore his portfolio of projects built with React, Node.js, and other cutting-edge technologies.",
+  keywords: "Anadu Godwin, Software Engineer, Full-Stack Web Developer, Web Developer,Python, Django, Typescript, Next.js, React, Node.js, Portfolio, Projects, Skills, Resume, Contact, AWS, Backend, frontend, Tailwind, Shadcn, Docker",
   authors: [{ name: "Anadu Godwin" }]
 };
 

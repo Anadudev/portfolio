@@ -18,6 +18,10 @@ import { FaGithub } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { FaWordpress } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
+import { FaDocker } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { SiGithubactions } from "react-icons/si";
+import { SiGraphql } from "react-icons/si";
 
 export const techStacks1 = [
   { text: "HTML", icon: TiHtml5 },
@@ -30,6 +34,8 @@ export const techStacks1 = [
   { text: "React", icon: FaReact },
   { text: "Next", icon: TbBrandNextjs },
   { text: "Nest", icon: SiNestjs },
+  { text: "AWS", icon: FaAws },
+  { text: "CI/CD", icon: SiGithubactions },
 ];
 
 export const techStacks2 = [
@@ -43,4 +49,6 @@ export const techStacks2 = [
   { text: "VsCode", icon: VscVscode },
   { text: "wordpress", icon: FaWordpress },
   { text: "Figma", icon: FaFigma },
+  { text: "Docker", icon: FaDocker },
+  { text: "GraphQl", icon: SiGraphql },
 ];
