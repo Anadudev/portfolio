@@ -21,7 +21,7 @@ export const navItems = [
   },
   {
     name: "Github",
-    new: false,
+    new: true,
     link: "https://github.com/Anadudev/",
   },
   // {
