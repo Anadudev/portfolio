@@ -17,11 +17,13 @@ export const navItems = [
   {
     name: "Blog",
     new: true,
+    external: true,
     link: "https://dev.to/anadudev",
   },
   {
     name: "Github",
     new: true,
+    external: true,
     link: "https://github.com/Anadudev/",
   },
   // {

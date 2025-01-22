@@ -30,8 +30,9 @@ export type NavProps = {
 
 export interface NavItem {
   name: string;
-  new: boolean;
+  new?: boolean;
   link: string;
+  external?: boolean;
 }
 
 export type ThemeToggleProps = {
