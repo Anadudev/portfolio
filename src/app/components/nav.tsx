@@ -53,7 +53,7 @@ export const MobileNav = () => {
                 >
                   {item.name}
                 </span>
-                {item.new && (
+                {item.external && (
                   <sup>
                     <FiExternalLink size={10} />
                   </sup>
@@ -90,7 +90,7 @@ export const FullNav = () => {
                 >
                   {item.name}
                 </span>
-                {item.new && (
+                {item.external && (
                   <sup>
                     <FiExternalLink size={10} />
                   </sup>
