@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface ExperienceCardProps {
@@ -7,6 +8,7 @@ interface ExperienceCardProps {
     role: string;
     date: string;
     summery: string;
+    link?: string;
     technologies: string[];
   };
 }
@@ -18,7 +20,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
         <div className="">
           <div className="flex gap-2">
             <span className="text-primary">Company:</span>
-            <h2 className="text-nowrap">{experience.company}</h2>
+            {experience.link ? (
+              <Link href={experience.link} className="text-nowrap underline">
+                {experience.company}
+              </Link>
+            ) : (
+              <h2 className="text-nowrap">{experience.company}</h2>
+            )}
           </div>
           <div className="flex gap-2">
             <span className="text-primary">Role:</span>
