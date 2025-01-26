@@ -9,8 +9,8 @@ export const experiences = [
 	},
 	{
 		id: 2,
-		company: "CodderLegion",
-		link: "https://www.codderlegion.com/",
+		company: "CoderLegion",
+		link: "https://coderlegion.com/",
 		role: "Guest Blogger",
 		date: "Jan 2025 - Present",
 		summery: `Contributed insightful and in-depth articles on various tech topics, enhancing the platform's content diversity and value.
