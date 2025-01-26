@@ -78,7 +78,7 @@ export const FullNav = () => {
           {navItems.map((item: NavItem, index: number) => (
             <li className={`text-center capitalize  `} key={index}>
               <Link
-                target="_blank"
+                // target="_blank"
                 href={item.link}
                 className="w-full flex justify-center gap-2"
               >
