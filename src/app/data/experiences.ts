@@ -10,7 +10,7 @@ export const experiences = [
 	{
 		id: 2,
 		company: "CoderLegion",
-		link: "https://coderlegion.com/",
+		link: "https://coderlegion.com/user/Anadudev",
 		role: "Guest Blogger",
 		date: "Jan 2025 - Present",
 		summery: `Contributed insightful and in-depth articles on various tech topics, enhancing the platform's content diversity and value.
