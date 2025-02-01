@@ -40,26 +40,50 @@ export const MobileNav = () => {
               onClick={() => setToggle(!toggle)}
               key={index}
             >
-              <Link
-                href={item.link}
-                className="w-full flex justify-center gap-2"
-              >
-                <span
-                  className={` text-xl font-bold transition-colors ease-in-out  ${
-                    pathName === item.link
-                      ? `text-black dark:text-primary`
-                      : `text-slate-600 dark:text-white  hover:text-black dark:hover:text-primary`
-                  }`}
+              {item.external ? (
+                <Link
+                  target="_blank"
+                  href={item.link}
+                  className="w-full flex justify-center gap-2"
                 >
-                  {item.name}
-                </span>
-                {item.external && (
-                  <sup>
-                    <FiExternalLink size={10} />
-                  </sup>
-                )}
-                {item.new && <ButtonNew />}
-              </Link>
+                  <span
+                    className={` text-xl font-bold transition-colors ease-in-out  ${
+                      pathName === item.link
+                        ? `text-black dark:text-primary`
+                        : `text-slate-600 dark:text-white  hover:text-black dark:hover:text-primary`
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                  {item.external && (
+                    <sup>
+                      <FiExternalLink size={10} />
+                    </sup>
+                  )}
+                  {item.new && <ButtonNew />}
+                </Link>
+              ) : (
+                <Link
+                  href={item.link}
+                  className="w-full flex justify-center gap-2"
+                >
+                  <span
+                    className={` text-xl font-bold transition-colors ease-in-out  ${
+                      pathName === item.link
+                        ? `text-black dark:text-primary`
+                        : `text-slate-600 dark:text-white  hover:text-black dark:hover:text-primary`
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                  {item.external && (
+                    <sup>
+                      <FiExternalLink size={10} />
+                    </sup>
+                  )}
+                  {item.new && <ButtonNew />}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -77,27 +101,50 @@ export const FullNav = () => {
         <ul className={`flex gap-5 w-full`}>
           {navItems.map((item: NavItem, index: number) => (
             <li className={`text-center capitalize  `} key={index}>
-              <Link
-                // target="_blank"
-                href={item.link}
-                className="w-full flex justify-center gap-2"
-              >
-                <span
-                  className={`transition-colors ease-in-out text-sm font-bold ${
-                    pathName === item.link
-                      ? `text-black dark:text-primary`
-                      : ` text-slate-600 dark:text-white hover:text-black dark:hover:text-primary `
-                  }`}
+              {item.external ? (
+                <Link
+                  target="_blank"
+                  href={item.link}
+                  className="w-full flex justify-center gap-2"
                 >
-                  {item.name}
-                </span>
-                {item.external && (
-                  <sup>
-                    <FiExternalLink size={10} />
-                  </sup>
-                )}
-                {item.new && <ButtonNew />}
-              </Link>
+                  <span
+                    className={`transition-colors ease-in-out text-sm font-bold ${
+                      pathName === item.link
+                        ? `text-black dark:text-primary`
+                        : ` text-slate-600 dark:text-white hover:text-black dark:hover:text-primary `
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                  {item.external && (
+                    <sup>
+                      <FiExternalLink size={10} />
+                    </sup>
+                  )}
+                  {item.new && <ButtonNew />}
+                </Link>
+              ) : (
+                <Link
+                  href={item.link}
+                  className="w-full flex justify-center gap-2"
+                >
+                  <span
+                    className={`transition-colors ease-in-out text-sm font-bold ${
+                      pathName === item.link
+                        ? `text-black dark:text-primary`
+                        : ` text-slate-600 dark:text-white hover:text-black dark:hover:text-primary `
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                  {item.external && (
+                    <sup>
+                      <FiExternalLink size={10} />
+                    </sup>
+                  )}
+                  {item.new && <ButtonNew />}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
