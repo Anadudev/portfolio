@@ -22,6 +22,7 @@ import { FaDocker } from "react-icons/fa";
 import { FaAws } from "react-icons/fa";
 import { SiGithubactions } from "react-icons/si";
 import { SiGraphql } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 
 export const techStacks1 = [
   { text: "HTML", icon: TiHtml5 },
@@ -36,6 +37,7 @@ export const techStacks1 = [
   { text: "Nest", icon: SiNestjs },
   { text: "AWS", icon: FaAws },
   { text: "CI/CD", icon: SiGithubactions },
+  { text: "Postman", icon: SiPostman },
 ];
 
 export const techStacks2 = [

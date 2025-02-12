@@ -8,8 +8,14 @@ const AboutSection = () => {
         <div className='mt-14 p-4 text-black dark:text-slate-300' id='about'>
             <SubHeading text="About me" icon={HiOutlineCubeTransparent} />
             <div className="grid gap-6 pt-8">
-                <p>Since the beginning of my journey as a developer, I have always been passionate about technology. Driven by passion, I have been continuously learning and seeking new challenges. My journey has been marked by a commitment to continuous growth and innovation.My early days were spent honing my skills in web development, and I have since expanded my knowledge to encompass a wide range of technologies.</p>
-                <p>I am constantly seeking new opportunities to expand my knowledge and stay up-to-date with the latest trends. My passion for technology and my dedication to continuous learning make me a valuable asset to any team.</p>
+                <p>Results-driven Full-Stack Software Engineer with over 3 years of experience building and
+                    deploying scalable web applications using Node.js, Django, and React.js. Proficient in
+                    relational and non-relational databases like PostgreSQL, MySQL, and MongoDB. </p>
+                <p> Experienced
+                    in backend development, API integration, and optimizing system performance. Skilled in
+                    agile development processes, containerization with Docker, and CI/CD pipelines. Passionate
+                    about problem-solving, contributing to innovative solutions, and collaborating with cross-functional
+                    teams to deliver high-quality products.</p>
             </div>
             <div className="pt-2">
                 <ul className='flex items-center gap-2 flex-wrap'>

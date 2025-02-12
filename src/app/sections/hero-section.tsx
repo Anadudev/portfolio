@@ -33,7 +33,7 @@ const HeroSection = () => {
                 </div>
                 <p className="text-xl text-pretty">
                     Full-stack{" "}
-                    <span className="dark:text-primary">Software engineer</span> with 2+
+                    <span className="dark:text-primary">Software engineer</span> with 3+
                     years of experience in crafting dynamic and responsive web
                     applications.
                 </p>
