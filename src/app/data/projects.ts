@@ -1,93 +1,378 @@
+const emptyProject = {
+  name: "",
+  description: "",
+  liveLink: "",
+  github: "",
+  thumbnail: "",
+  tags: [],
+  keyFeatures: [],
+  technicalChallenges: [],
+  architecture: {
+    description: "",
+    diagram: "",
+  },
+  codeQuality: {
+    standards: [],
+    codeReviews: "",
+  },
+  deployment: {
+    platform: "",
+    ciCd: "",
+  },
+  lessonsLearned: [],
+};
+
 export const works1 = [
   {
     name: "MiraTends",
     description:
-      "A comprehensive online market place where you can buy, sell and manage products.",
-    link: "https://mira-trends.vercel.app/",
-    // github: "#",
+      "A comprehensive online market place where you can buy, sell and manage products with an integrated admin dashboard to manage your store.",
+    motivation:
+      "To learn and implement a complex e-commerce platform with a user-friendly interface and a robust admin dashboard.",
+    role: "Solo Developer",
+    targetAudience: "Users who want to buy and sell products online.",
+    liveLink: "https://mira-trends.vercel.app/",
+    githubLink: "https://github.com/Anadudev/mira-tends",
     thumbnail: "/projects/work3.png",
     tags: [1, 8, 12, 2, 4, 5, 7, 9, 14, 16, 3, 17],
+    keyFeatures: [
+      "User authentication and authorization (JWT)",
+      "Product catalog with filtering and pagination",
+      "Cart and checkout functionality",
+      "Responsive design for mobile and desktop",
+      "Admin dashboard for managing products and users",
+      "Unauthenticated user cart functionality with local storage",
+      "Order history and order details",
+      "Order status indicators",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and shadcn UI components.",
+      },
+      {
+        challenge: "Cart and checkout functionality",
+        solution:
+          "Implemented optimized database queries for cart and checkout functionality.",
+      },
+      {
+        challenge:
+          "Consistent data migration from local storage to database on user authentication",
+        solution:
+          "Implemented a reusable asynchronous function with optimized algorithms.",
+      },
+      {
+        challenge: "Handling relational data and database queries",
+        solution: "Used Prisma ORM in combination with PostgreSQL.",
+      },
+    ],
+    architecture: {
+      description:
+        "Full-stack client-server architecture with Next.js for both frontend and backend.",
+      diagram: "/projects/miratends-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+      ciCd: "Integrated with GitHub Actions for continuous integration and deployment.",
+    },
+    lessonsLearned: [
+      "Deep understanding of user authentication and authorization.",
+      "Experience with building complex e-commerce platforms.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of writing unit tests and performing code reviews.",
+      "Understanding and using Prisma ORM for relational data and database queries.",
+    ],
   },
-  {
-    name: "",
-    description: "",
-    link: "",
-    // github: "",
-    thumbnail: "",
-    tags: [],
-  },
+  emptyProject,
   {
     name: "Legacy Perfume Store",
     description: "An online e-commerce platform for perfumes and fragrances.",
-    link: "https://shopatlegacy.com/",
+    liveLink: "https://shopatlegacy.com/",
     // github: "#",
     thumbnail: "/projects/work2.jpg",
     tags: [1, 8, 12, 2, 4, 5, 7, 9, 14, 16, 3, 17],
+    keyFeatures: [
+      "User authentication and authorization (JWT)",
+      "Product catalog with filtering and pagination",
+      "Cart and checkout functionality",
+      "Responsive design for mobile and desktop",
+      "Admin dashboard for managing products and users",
+      "Unauthenticated user cart functionality with local storage",
+      "Order history and order details",
+      "Order status indicators",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and shadcn UI components.",
+      },
+      {
+        challenge: "Cart and checkout functionality",
+        solution:
+          "Implemented optimized database queries for cart and checkout functionality.",
+      },
+      {
+        challenge:
+          "Consistent data migration from local storage to database on user authentication",
+        solution:
+          "Implemented a reusable asynchronous function with optimized algorithms.",
+      },
+      {
+        challenge: "Handling relational data and database queries",
+        solution: "Used Prisma ORM in combination with PostgreSQL.",
+      },
+    ],
+    architecture: {
+      description:
+        "Full-stack client-server architecture with Next.js for both frontend and backend.",
+      diagram: "/projects/miratends-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+      ciCd: "Integrated with GitHub Actions for continuous integration and deployment.",
+    },
+    lessonsLearned: [
+      "Deep understanding of user authentication and authorization.",
+      "Experience with building complex e-commerce platforms.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of writing unit tests and performing code reviews.",
+      "Understanding and using Prisma ORM for relational data and database queries.",
+    ],
   },
+  emptyProject,
   {
-    name: "",
-    description: "",
-    link: "",
-    github: "",
-    thumbnail: "",
-    tags: [],
+    name: "Chatty",
+    description:
+      "A real-time chat application built with React, Node.js, and Socket.io.",
+    liveLink: "https://shopatlegacy.com/",
+    // github: "#",
+    thumbnail: "/projects/work6.png",
+    tags: [1, 8, 12, 2, 4, 5, 7, 9, 14, 16, 3, 17],
+    keyFeatures: [
+      "Real-time messaging via Socket.io",
+      "User authentication and authorization (JWT) and cookies",
+      "Online/offline user status indicators",
+      "Message history persistence",
+      "Responsive design for mobile and desktop",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and Daisy UI components.",
+      },
+      {
+        challenge: "Real-time messaging via Socket.io",
+        solution:
+          "Implemented real-time messaging functionality using Socket.io.",
+      },
+      {
+        challenge: "User authentication and authorization",
+        solution:
+          "Implemented user authentication and authorization using JWT.",
+      },
+      {
+        challenge: "Online/offline user status indicators",
+        solution:
+          "Implemented online/offline user status indicators using Socket.io.",
+      },
+      {
+        challenge: "Message history persistence",
+        solution:
+          "Implemented message history persistence using REST API for initial load from the server.",
+      },
+    ],
+    architecture: {
+      description:
+        "Full-stack separated client-server architecture with React.js for the frontend and Node.js for the backend.",
+      diagram: "/projects/chatty-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Render",
+    },
+    lessonsLearned: [
+      "Deep understanding of user authentication and authorization.",
+      "Experience with building real-time chat applications.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of writing unit tests and performing code reviews.",
+      "Understanding and using Socket.io for real-time messaging.",
+    ],
   },
+  emptyProject,
 ];
 
 export const works2 = [
-
   {
     name: "Porthree",
     description:
       "A personal portfolio management website built with react, Django and Tailwind CSS.",
-    link: "https://porthree-app.vercel.app/",
+    liveLink: "https://porthree-app.vercel.app/",
     github: "https://github.com/Anadudev/porthree",
     thumbnail: "/projects/work5.png",
     tags: [1, 2, 3, 5, 12, 6, 16, 13, 10, 7],
-  }, {
-    name: "",
-    description: "",
-    link: "",
-    // github: "",
-    thumbnail: "",
-    tags: [],
+    keyFeatures: [
+      "User authentication and authorization (JWT) and cookies",
+      "Online/offline user status indicators",
+      "Rich text editor for users' portfolio and blog posts",
+      "Responsive design for mobile and desktop",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using MUI components and CSS in JS.",
+      },
+      {
+        challenge: "User authentication and authorization",
+        solution:
+          "Implemented user authentication and authorization using JWT.",
+      },
+    ],
+    architecture: {
+      description:
+        "Full-stack separated client-server architecture with React.js for the frontend and Django for the backend.",
+      diagram: "/projects/porthree-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+    },
+    lessonsLearned: [
+      "Deep understanding of user authentication and authorization.",
+      "Experience with building personal portfolio management applications.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of writing unit tests and performing code reviews.",
+      "Understanding and using Django for backend development.",
+      "Understanding and using MUI for responsive design.",
+      "Building REST APIs with Python Django.",
+    ],
   },
+  emptyProject,
   {
     name: "Anadu Portfolio",
     description:
       "A personal portfolio website built with Next.js and Tailwind CSS.",
-    link: "/",
+    liveLink: "/",
     github: "https://github.com/Anadudev/portfolio",
     thumbnail: "/projects/work1.png",
     tags: [1, 2, 5, 11, 7, 9, 16],
+    keyFeatures: [
+      "Responsive design for mobile and desktop",
+      "Dark/Light mode toggle",
+      "Smooth scroll to anchor links",
+      "Browser friendly animations",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and Daisy UI components.",
+      },
+    ],
+    architecture: {
+      description: "Frontend-only architecture with Next.js.",
+      diagram: "/projects/portfolio-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+    },
   },
 
-  // props.github
-  {
-    name: "",
-    description: "",
-    link: "",
-    // github: "",
-    thumbnail: "",
-    tags: [],
-  },
+  emptyProject,
   {
     name: "Workgen dashboard",
-    description:
-      "A mobile responsive CRM dashboard page .",
-    link: "https://workgen.vercel.app/leads",
+    description: "A mobile responsive CRM dashboard page .",
+    liveLink: "https://workgen.vercel.app/leads",
     github: "https://github.com/Anadudev/workgen",
     thumbnail: "/projects/works4.png",
     tags: [1, 2, 5, 7, 9, 16, 18],
+    keyFeatures: [
+      "Responsive design for mobile and desktop",
+      "Complex modern ui with tailwind css",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and Daisy UI components.",
+      },
+    ],
+    architecture: {
+      description: "Frontend-only architecture with Next.js.",
+      diagram: "/projects/workgen-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+    },
+    lessonsLearned: [
+      "Deep understanding of complex dashboard layout.",
+      "Experience with building dashboard we application UI.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of mobile first design approach.",
+    ],
   },
 
+  emptyProject,
   {
-    name: "",
-    description: "",
-    link: "",
-    // github: "",
-    thumbnail: "",
-    tags: [],
+    name: "Creatify",
+    description: "A fully responsive SAAS landing page for design token.",
+    liveLink: "https://creatify-blond.vercel.app/",
+    github: "https://github.com/Anadudev/workgen",
+    thumbnail: "/projects/work7.png",
+    tags: [1, 2, 5, 7, 9, 16, 18],
+    keyFeatures: [
+      "Responsive design for mobile and desktop",
+      "Complex modern ui with tailwind css",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and Daisy UI components.",
+      },
+    ],
+    architecture: {
+      description: "Frontend-only architecture with Next.js.",
+      diagram: "/projects/creatify-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+    },
+    lessonsLearned: [
+      "Deep understanding of complex dashboard layout.",
+      "Experience with building dashboard we application UI.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of mobile first design approach.",
+    ],
   },
 ];
 
