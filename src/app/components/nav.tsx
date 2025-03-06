@@ -164,7 +164,7 @@ const Nav = ({ theme, setTheme }: NavProps) => {
       className={`fixed w-full top-0 left-0 p-6 bg-transparent tablet:flex justify-between items-center z-50`}
     >
       <div
-        className={`glass rounded-xl border dark:border-slate-700 border-slate-300 bg-opacity-15	 bg-white dark:bg-opacity-15 dark:bg-black flex justify-between items-center py-3 px-6 tablet-sm:gap-10`}
+        className={`glass rounded-3xl border dark:border-slate-700 border-slate-300 bg-opacity-15	 bg-white dark:bg-opacity-15 dark:bg-black flex justify-between items-center py-3 px-6 tablet-sm:gap-10`}
       >
         <Logo
           stye="text-2xl font-extrabold text-black dark:text-white"

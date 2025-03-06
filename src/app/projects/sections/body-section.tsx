@@ -35,13 +35,13 @@ const BodySection = () => {
         <CategoryCardMobile setter={filterSetter} data={workFilter} categoryCounts={categoriesCount} />
         <CategoryCardFull setter={filterSetter} data={workFilter} categoryCounts={categoriesCount} />
         <div className="max-w-[80rem]">
-          <div className="grid gap-7 px-3 sm:px-7 tablet:grid-cols-2">
+          <div className="grid gap-7 px-3 sm:px-7 tablet-sm:grid-cols-2 pc-sm:grid-cols-3">
             {projects.map((project, index) => project.name && <WorkCard
               key={index}
               name={project.name}
-              link={project.link}
+              liveLink={project.liveLink}
               description={project.description}
-              github={project.github}
+              githubLink={project.githubLink}
               thumbnail={project.thumbnail}
               tags={getWorkTags(project?.tags as number[], categories)} />)
             }

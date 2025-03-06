@@ -64,10 +64,28 @@ export type tags = {
 export type project = {
   name: string;
   description?: string;
-  link?: string;
-  github?: string;
+  liveLink?: string;
+  githubLink?: string;
   thumbnail?: string;
-  tags?: tags[] | number[];
+  tags?: number[] | tags[];
+  keyFeatures?: string[];
+  technicalChallenges?: {
+    challenge: string;
+    solution: string;
+  }[];
+  architecture?: {
+    description?: string;
+    diagram?: string;
+  };
+  codeQuality?: {
+    standards?: string[];
+    codeReviews?: string;
+  };
+  deployment?: {
+    platform?: string;
+    ciCd?: string;
+  };
+  lessonsLearned?: string[];
 };
 
 export type WorksInfiniteScrollProps = {
@@ -80,10 +98,9 @@ export type TitlePropTypes = {
   pulse?: boolean;
 };
 
-
 export interface categoriesCountInterface {
   [tagId: number]: {
-      count: number;
-      id: number;
+    count: number;
+    id: number;
   };
 }
