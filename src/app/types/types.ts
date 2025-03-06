@@ -61,6 +61,12 @@ export type tags = {
   visible?: boolean;
 };
 
+export type technologies = {
+  id: number;
+  text: string;
+  Icon: IconType;
+};
+
 export type project = {
   name: string;
   description?: string;
@@ -68,6 +74,11 @@ export type project = {
   githubLink?: string;
   thumbnail?: string;
   tags?: number[] | tags[];
+  technologies?: {
+    frontend?: number[] | technologies[];
+    backend?: number[] | technologies[];
+    deployment?: number[] | technologies[];
+  };
   keyFeatures?: string[];
   technicalChallenges?: {
     challenge: string;

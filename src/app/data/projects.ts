@@ -5,6 +5,11 @@ const emptyProject = {
   githubLink: "",
   thumbnail: "",
   tags: [],
+  technologies: {
+    frontend: [],
+    backend: [],
+    deployment: [],
+  },
   keyFeatures: [],
   technicalChallenges: [],
   architecture: {
@@ -31,6 +36,11 @@ export const works1 = [
     githubLink: "#",
     thumbnail: "/projects/work6.png",
     tags: [1, 2, 3, 5, 7, 12, 14, 15, 16],
+    technologies: {
+      frontend: [3, 4, 5, 7, 8],
+      backend: [1, 2, 3, 4, 7, 8, 9],
+      deployment: [4],
+    },
     keyFeatures: [
       "Real-time messaging via Socket.io",
       "User authentication and authorization (JWT) and cookies",
@@ -93,6 +103,11 @@ export const works1 = [
     githubLink: "https://github.com/Anadudev/creatify",
     thumbnail: "/projects/work7.png",
     tags: [1, 2, 5, 7, 9, 16],
+    technologies: {
+      frontend: [3, 4, 5, 6, 7],
+      backend: [],
+      deployment: [3],
+    },
     keyFeatures: [
       "Responsive design for mobile and desktop",
       "Complex modern ui with tailwind css",
@@ -135,6 +150,11 @@ export const works1 = [
     // githubLink: "https://github.com/Anadudev/mira-tends",
     thumbnail: "/projects/work3.png",
     tags: [1, 2, 3, 4, 5, 7, 8, 9, 12, 14, 16, 17],
+    technologies: {
+      frontend: [3, 4, 5, 6, 7],
+      backend: [1, 5, 6, 7],
+      deployment: [3],
+    },
     keyFeatures: [
       "User authentication and authorization (JWT)",
       "Product catalog with filtering and pagination",
@@ -196,6 +216,11 @@ export const works1 = [
     // githubLink: "#",
     thumbnail: "/projects/work2.jpg",
     tags: [1, 2, 3, 4, 5, 7, 8, 9, 12, 14, 16, 17],
+    technologies: {
+      frontend: [3, 4, 5, 6, 7],
+      backend: [1, 5, 6, 7],
+      deployment: [3],
+    },
     keyFeatures: [
       "User authentication and authorization (JWT)",
       "Product catalog with filtering and pagination",
@@ -260,6 +285,11 @@ export const works2 = [
     githubLink: "https://github.com/Anadudev/porthree",
     thumbnail: "/projects/work5.png",
     tags: [1, 2, 3, 5, 6, 7, 10, 12, 13, 16],
+    technologies: {
+      frontend: [3, 4, 5, 9],
+      backend: [7, 8, 10, 11, 12],
+      deployment: [3, 4],
+    },
     keyFeatures: [
       "User authentication and authorization (JWT) and cookies",
       "Online/offline user status indicators",
@@ -309,6 +339,11 @@ export const works2 = [
     githubLink: "https://github.com/Anadudev/portfolio",
     thumbnail: "/projects/work1.png",
     tags: [1, 2, 5, 7, 9, 11, 16],
+    technologies: {
+      frontend: [3, 4, 5, 6, 7, 9],
+      backend: [],
+      deployment: [3],
+    },
     keyFeatures: [
       "Responsive design for mobile and desktop",
       "Dark/Light mode toggle",
@@ -342,6 +377,11 @@ export const works2 = [
     githubLink: "https://github.com/Anadudev/workgen",
     thumbnail: "/projects/works4.png",
     tags: [1, 2, 5, 7, 9, 16, 18],
+    technologies: {
+      frontend: [3, 4, 5, 6, 7, 9],
+      backend: [],
+      deployment: [3],
+    },
     keyFeatures: [
       "Responsive design for mobile and desktop",
       "Complex modern ui with tailwind css",
