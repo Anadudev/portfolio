@@ -3,10 +3,8 @@ import React, { useState, useEffect } from "react";
 import CategoryCardMobile from "@/app/components/categoryCard";
 import { allWorks } from "@/app/data/projects";
 import WorkCard from "@/app/components/project-card";
-import { categories } from "@/app/data/categories";
 import { project, categoriesCountInterface } from "@/app/types/types";
 import { countTags } from "@/app/lib/count-tags";
-import { getWorkTags } from "@/app/lib/get-project-tags";
 import CategoryCardFull from "@/app/components/categoryCardFull";
 // import { frontendTechnologies, backendTechnologies, deploymentTechnologies } from "@/app/data/technologies";
 
@@ -51,17 +49,7 @@ const BodySection = () => {
           <div className="grid gap-7 px-3 sm:px-7 tablet-sm:grid-cols-2 pc-sm:grid-cols-3">
             {projects.map(
               (project, index) =>
-                project.name && (
-                  <WorkCard
-                    key={index}
-                    name={project.name}
-                    liveLink={project.liveLink}
-                    description={project.description}
-                    githubLink={project.githubLink}
-                    thumbnail={project.thumbnail}
-                    tags={getWorkTags(project?.tags as number[], categories)}
-                  />
-                )
+                project.name && <WorkCard key={index} props={project} />
             )}
           </div>
         </div>

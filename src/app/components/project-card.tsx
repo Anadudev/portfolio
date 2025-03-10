@@ -7,7 +7,7 @@ import Image from "next/image";
 import { tags, project } from "@/app/types/types";
 import ProjectDetailsModal from "./projectDetailsModal";
 
-const WorkCard = (props: project) => {
+const WorkCard = ({ props }: { props: project }) => {
   const [showDetails, setShowDetails] = useState(false);
   const toggleDetails = () => setShowDetails(!showDetails);
 
@@ -77,8 +77,11 @@ const WorkCard = (props: project) => {
           </ul>
         </div>
       </div>
-      pp
-      <ProjectDetailsModal show={showDetails} setShow={setShowDetails} data={props} />
+      <ProjectDetailsModal
+        show={showDetails}
+        setShow={setShowDetails}
+        data={props}
+      />
     </div>
   );
 };
