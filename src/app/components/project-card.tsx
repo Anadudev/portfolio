@@ -1,28 +1,33 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 import { tags, project } from "@/app/types/types";
+import ProjectDetailsModal from "./projectDetailsModal";
 
 const WorkCard = (props: project) => {
+  const [showDetails, setShowDetails] = useState(false);
+  const toggleDetails = () => setShowDetails(!showDetails);
+
   return (
     <div className="slider group transition-all duration-200 ease-out border hover:border-2 border-slate-300 dark:border-slate-700 rounded-xl">
-      <div className="rounded-t-xl">
+      <div onClick={toggleDetails} className="rounded-t-xl">
         {/* <Link href={props.liveLink || ""} title="Visit Website"> */}
-          <div className=" w-full">
-            <div
-              className="relative aspect-video overflow-hidden cursor-pointer rounded-t-xl"
-              title="Visit project"
-            >
-              <Image
-                className="object-cover transition-all duration-300 ease-out  group-hover:scale-110"
-                src={props.thumbnail || ""}
-                alt={props.name}
-                fill
-              />
-            </div>
+        <div className=" w-full">
+          <div
+            className="relative aspect-video overflow-hidden cursor-pointer rounded-t-xl"
+            title="Visit project"
+          >
+            <Image
+              className="object-cover transition-all duration-300 ease-out  group-hover:scale-110"
+              src={props.thumbnail || ""}
+              alt={props.name}
+              fill
+            />
           </div>
+        </div>
         {/* </Link> */}
       </div>
       <div className="p-4 grid gap-4 pt-5">
@@ -72,6 +77,8 @@ const WorkCard = (props: project) => {
           </ul>
         </div>
       </div>
+      pp
+      <ProjectDetailsModal show={showDetails} setShow={setShowDetails} data={props} />
     </div>
   );
 };

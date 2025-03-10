@@ -3,7 +3,7 @@ import Title from "@/app/components/title";
 import { experiences } from "@/app/data/experiences";
 import ExperienceCard from "@/app/experiences/components/experience-card";
 
-const ProjectPage = () => {
+const ExperiencePage = () => {
   return (
     <div className="p-4 pt-36 space-y-12 text-black dark:text-slate-300">
       <div className="w-full flex justify-center items-center">
@@ -23,4 +23,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default ExperiencePage;

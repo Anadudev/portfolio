@@ -1,16 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import {
-  CategoryCardMobile,
-  CategoryCardFull,
-} from "@/app/components/categoryCard";
+import CategoryCardMobile from "@/app/components/categoryCard";
 import { allWorks } from "@/app/data/projects";
 import WorkCard from "@/app/components/project-card";
 import { categories } from "@/app/data/categories";
-import { project } from "@/app/types/types";
-import { categoriesCountInterface } from "@/app/types/types";
+import { project, categoriesCountInterface } from "@/app/types/types";
 import { countTags } from "@/app/lib/count-tags";
 import { getWorkTags } from "@/app/lib/get-project-tags";
+import CategoryCardFull from "@/app/components/categoryCardFull";
 // import { frontendTechnologies, backendTechnologies, deploymentTechnologies } from "@/app/data/technologies";
 
 const BodySection = () => {
@@ -26,7 +23,9 @@ const BodySection = () => {
      * and updates the projects state with the filtered array.
      */
     const handleWorks = () => {
-      const worksFiltered = allWorks.filter((wk) => wk.tags.includes(workFilter));
+      const worksFiltered = allWorks.filter((wk) =>
+        wk.tags.includes(workFilter)
+      );
 
       setWorks(worksFiltered);
     };
