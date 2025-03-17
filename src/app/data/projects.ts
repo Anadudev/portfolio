@@ -99,7 +99,7 @@ export const works1 = [
     description:
       "A real-time chat application built with React, Node.js, and Socket.io.",
     liveLink: "https://chat-app-e8jl.onrender.com/login",
-    githubLink: "https://github.com/Anadudev/chatty",
+    githubLink: "https://github.com/Anadudev/chat-app",
     thumbnail: "/projects/work6.png",
     tags: [1, 2, 3, 5, 7, 12, 14, 15, 16],
     technologies: {
