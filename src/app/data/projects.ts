@@ -42,6 +42,7 @@ export const works1 = [
       deployment: [3, 4],
     },
     keyFeatures: [
+      "Modern ui on application landing page",
       "Responsive design for mobile and desktop",
       "Complex modern ui with tailwind css",
       "Smooth scroll to anchor links",
