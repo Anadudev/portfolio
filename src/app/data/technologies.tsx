@@ -32,7 +32,7 @@ export const frontendTechnologies = [
   { id: 7, text: "Tailwind", Icon: TbBrandTailwind },
   { id: 8, text: "Socket.io-Client", Icon: TbBrandSocketIo },
   { id: 9, text: "MUI", Icon: "MUI" },
-  { id: 9, text: "Shad UI", Icon: SiShadcnui },
+  { id: 10, text: "Shad UI", Icon: SiShadcnui },
 ];
 
 export const backendTechnologies = [

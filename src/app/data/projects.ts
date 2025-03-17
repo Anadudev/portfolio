@@ -35,23 +35,33 @@ export const works1 = [
     liveLink: "https://aireader-six.vercel.app/",
     githubLink: "https://github.com/Anadudev/aireader",
     thumbnail: "/projects/work8.png",
-    tags: [1, 2, 5, 7, 9, 16, 18],
+    tags: [1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 17],
     technologies: {
-      frontend: [3, 4, 5, 6, 7, 9],
-      backend: [],
-      deployment: [3],
+      frontend: [3, 4, 5, 6, 7, 10],
+      backend: [1, 5, 6, 7, 8],
+      deployment: [3, 4],
     },
     keyFeatures: [
       "Responsive design for mobile and desktop",
       "Complex modern ui with tailwind css",
       "Smooth scroll to anchor links",
       "Browser friendly animations",
+      "Complex relational database design",
     ],
     technicalChallenges: [
+      {
+        challenge: "Sharing state across components",
+        solution: "Implemented global state management using zustand",
+      },
       {
         challenge: "Consistent and responsive design for mobile and desktop",
         solution:
           "Implemented responsive design using Tailwind CSS and Shadcn UI components.",
+      },
+      {
+        challenge: "Handling Complex form inputs from users",
+        solution:
+          "Form validation and error handling using Zod and React Hook Form.",
       },
     ],
     architecture: {
@@ -60,18 +70,26 @@ export const works1 = [
       diagram: "",
     },
     codeQuality: {
-      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
-      codeReviews: "Regular code reviews performed for key components.",
+      standards: [
+        "Reusable UI components",
+        "Airbnb JavaScript Style Guide",
+        "Object Oriented Programming",
+      ],
+      codeReviews:
+        "Regular code reviews performed for key components and features.",
     },
     deployment: {
       platform: "Vercel",
-      ciCd: "GitHub Actions",
+      ciCd: "GitHub, Vercel, and Render",
     },
     lessonsLearned: [
-      "Deep understanding of complex dashboard layout.",
-      "Experience with building dashboard we application UI.",
+      "Deep understanding of complex relational database design.",
+      "Improved experience in building complex relational database design.",
       "Improved skills in React.js and frontend development.",
       "Importance of mobile first design approach.",
+      "Deep understanding complex form validation and error handling.",
+      "Improved skills in Tailwind CSS and CSS.",
+      "Improved understanding of route protection in the frontend.",
     ],
   },
   emptyProject,
