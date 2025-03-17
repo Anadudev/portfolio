@@ -29,6 +29,53 @@ const emptyProject = {
 
 export const works1 = [
   {
+    name: "AILogue",
+    description:
+      "AILogue is a platform that empowers users to create, share, and explore AI-powered dialogues. With a vibrant community and expert prompting guidance, users can discover new possibilities and connect with others who share their passion for AI content. ",
+    liveLink: "https://aireader-six.vercel.app/",
+    githubLink: "https://github.com/Anadudev/aireader",
+    thumbnail: "/projects/work8.png",
+    tags: [1, 2, 5, 7, 9, 16, 18],
+    technologies: {
+      frontend: [3, 4, 5, 6, 7, 9],
+      backend: [],
+      deployment: [3],
+    },
+    keyFeatures: [
+      "Responsive design for mobile and desktop",
+      "Complex modern ui with tailwind css",
+      "Smooth scroll to anchor links",
+      "Browser friendly animations",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and Shadcn UI components.",
+      },
+    ],
+    architecture: {
+      description:
+        "Full-stack separated client-server architecture with Next.js for the frontend and Nest.js for the backend.",
+      diagram: "",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+      ciCd: "GitHub Actions",
+    },
+    lessonsLearned: [
+      "Deep understanding of complex dashboard layout.",
+      "Experience with building dashboard we application UI.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of mobile first design approach.",
+    ],
+  },
+  emptyProject,
+  {
     name: "Chatty",
     description:
       "A real-time chat application built with React, Node.js, and Socket.io.",
@@ -138,6 +185,9 @@ export const works1 = [
     ],
   },
   emptyProject,
+];
+
+export const works2 = [
   {
     name: "MiraTends",
     description:
@@ -274,9 +324,7 @@ export const works1 = [
       "Understanding and using Prisma ORM for relational data and database queries.",
     ],
   },
-];
-
-export const works2 = [
+  emptyProject,
   {
     name: "Porthree",
     description:
