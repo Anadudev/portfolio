@@ -95,6 +95,50 @@ export const works1 = [
   },
   emptyProject,
   {
+    name: "OvalPay",
+    description: "A web3 landing page built with ReactJs and Tailwind CSS.",
+    liveLink: "https://oval-pay.vercel.app/",
+    githubLink: "https://github.com/Anadudev/ovalpay",
+    thumbnail: "/projects/work9.png",
+    tags: [1, 2, 3, 5, 7, 12, 14, 15, 16],
+    technologies: {
+      frontend: [3, 4, 5, 7, 8],
+      backend: [1, 2, 3, 4, 7, 8, 9],
+      deployment: [4],
+    },
+    keyFeatures: [
+      "Responsive modern ui with tailwind css",
+      "Cool and professionally picked UI color scheme",
+      "CSS Styling with tailwind v4",
+    ],
+    technicalChallenges: [
+      {
+        challenge: "Consistent and responsive design for mobile and desktop",
+        solution:
+          "Implemented responsive design using Tailwind CSS and shadcn UI components.",
+      },
+    ],
+    architecture: {
+      description: "Frontend single page application with ReactJs",
+      diagram: "/projects/chatty-architecture.png",
+    },
+    codeQuality: {
+      standards: ["Reusable UI components", "Airbnb JavaScript Style Guide"],
+      codeReviews: "Regular code reviews performed for key components.",
+    },
+    deployment: {
+      platform: "Vercel",
+    },
+    lessonsLearned: [
+      "Deep understanding translation of design fom Figma to code.",
+      "Color management",
+      "Deep understanding of Tailwind CSS and CSS.",
+      "Improved skills in React.js and frontend development.",
+      "Importance of mobile first design approach.",
+    ],
+  },
+  emptyProject,
+  {
     name: "Chatty",
     description:
       "A real-time chat application built with React, Node.js, and Socket.io.",
