@@ -3,6 +3,7 @@ import NavigationButton from "./Atoms/NavigationButton";
 import { navItems } from "../data/navbar";
 import { Github } from "lucide-react";
 import Link from "next/link";
+import { smoothScrollTo } from "@/utils/smoothScroll";
 
 const Header = () => {
   return (
@@ -45,6 +46,10 @@ const Header = () => {
           <Link
             className="rounded-full bg-black px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              smoothScrollTo("#contact", 1500);
+            }}
           >
             Contact
           </Link>
