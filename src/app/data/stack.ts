@@ -12,10 +12,16 @@ export const Stacks = [
     title: "React",
   },
   {
+    title: "Tailwind CSS",
+  },
+  {
     title: "GraphQL",
   },
   {
     title: "Docker",
+  },
+  {
+    title: "Git/GitHub",
   },
   {
     title: "AWS",
