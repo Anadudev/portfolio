@@ -3,7 +3,13 @@ export const Stacks = [
     title: "TypeScript",
   },
   {
+    title: "Node.js",
+  },
+  {
     title: "Nest.js",
+  },
+  {
+    title: "React",
   },
   {
     title: "GraphQL",
@@ -15,13 +21,10 @@ export const Stacks = [
     title: "AWS",
   },
   {
-    title: "Rust/C++",
+    title: "Python",
   },
   {
-    title: "React",
-  },
-  {
-    title: "Kubernetes",
+    title: "MongoDB",
   },
   {
     title: "PostgreSQL",
