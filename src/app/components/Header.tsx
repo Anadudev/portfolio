@@ -1,10 +1,14 @@
 import React from "react";
+import NavigationButton from "./Atoms/NavigationButton";
+import { navItems } from "../data/navbar";
+import { Github } from "lucide-react";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 flex h-24 w-full items-center justify-center bg-background-light/80 px-4 backdrop-blur-sm dark:bg-background-dark/80 md:px-8">
       <nav className="flex w-full max-w-6xl items-center justify-between gap-8">
-        <a className="flex items-center gap-4" href="#">
+        <Link className="flex items-center gap-4" href="#">
           <div className="h-8 w-8 text-[#1D1D1F] dark:text-[#F5F5F7]">
             <svg
               fill="currentColor"
@@ -17,33 +21,32 @@ const Header = () => {
           <h2 className="text-xl font-bold tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
             AG
           </h2>
-        </a>
-        <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/50 p-1 dark:border-gray-700/80 dark:bg-gray-800/50">
-          <a
-            className="rounded-full px-4 py-1.5 text-sm font-medium text-gray-600 transition-colors hover:bg-white hover:text-black dark:text-gray-400 dark:hover:bg-gray-700/80 dark:hover:text-white"
-            href="#architecture"
-          >
-            Architecture
-          </a>
-          <a
-            className="rounded-full px-4 py-1.5 text-sm font-medium text-gray-600 transition-colors hover:bg-white hover:text-black dark:text-gray-400 dark:hover:bg-gray-700/80 dark:hover:text-white"
-            href="#stack"
-          >
-            Stack
-          </a>
-          <a
-            className="rounded-full px-4 py-1.5 text-sm font-medium text-gray-600 transition-colors hover:bg-white hover:text-black dark:text-gray-400 dark:hover:bg-gray-700/80 dark:hover:text-white"
-            href="#experience"
-          >
-            Experience
-          </a>
+        </Link>
+        <div className="hidden md:flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100/50 p-1 dark:border-gray-700/80 dark:bg-gray-800/50">
+          {navItems.map((item) => (
+            <NavigationButton
+              key={item.title}
+              href={item.href}
+              title={item.title}
+              Icon={item.icon}
+            />
+          ))}
         </div>
-        <a
-          className="rounded-full bg-black px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-          href="#contact"
-        >
-          Contact
-        </a>
+        <div className="flex items-center gap-2">
+          <Link
+            className="flex items-center gap-2 rounded-full bg-black px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            href="#contact"
+          >
+            <Github size={15} />
+            Github
+          </Link>
+          <Link
+            className="rounded-full bg-black px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            href="#contact"
+          >
+            Contact
+          </Link>
+        </div>
       </nav>
     </header>
   );

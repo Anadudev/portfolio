@@ -1,4 +1,4 @@
-import ExperienceHighlight from "../sections/Atoms/ExperienceHighlight";
+import ExperienceHighlight from "../components/Atoms/ExperienceHighlight";
 
 export const experienceData = [
   {

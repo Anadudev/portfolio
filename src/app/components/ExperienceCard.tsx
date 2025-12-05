@@ -1,5 +1,5 @@
 import React from "react";
-import ExperienceHighlight from "../sections/Atoms/ExperienceHighlight";
+import ExperienceHighlight from "./Atoms/ExperienceHighlight";
 
 declare interface Experience {
   title: string;

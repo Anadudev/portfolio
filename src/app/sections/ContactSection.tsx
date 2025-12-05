@@ -1,6 +1,7 @@
 import { Linkedin, Mail } from "lucide-react";
 import React from "react";
 import ScrollReveal from "@/components/ScrollReveal";
+import Link from "next/link";
 
 const ContactSection = () => {
   return (
@@ -28,12 +29,12 @@ const ContactSection = () => {
                 <h3 className="sf-display text-base font-semibold text-[#1D1D1F] dark:text-[#F5F5F7]">
                   Email
                 </h3>
-                <a
+                <Link
                   className="sf-display text-base text-[#135bec] transition-opacity hover:opacity-80 dark:text-blue-400"
                   href="mailto:anadudev@gmail.com"
                 >
                   anadudev@gmail.com
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -44,12 +45,12 @@ const ContactSection = () => {
                 <h3 className="sf-display text-base font-semibold text-[#1D1D1F] dark:text-[#F5F5F7]">
                   LinkedIn
                 </h3>
-                <a
+                <Link
                   className="sf-display text-base text-[#135bec] transition-opacity hover:opacity-80 dark:text-blue-400"
                   href="https://linkedin.com/in/anadudev"
                 >
                   linkedin.com/in/anadudev
-                </a>
+                </Link>
               </div>
             </div>
           </div>

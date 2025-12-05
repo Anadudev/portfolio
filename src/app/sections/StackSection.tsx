@@ -1,6 +1,6 @@
 import React from "react";
 import { Stacks } from "../data/stack";
-import StackCapsule from "./Atoms/StackCapsule";
+import StackCapsule from "../components/Atoms/StackCapsule";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const StackSection = () => {

@@ -8,7 +8,7 @@ import ContactSection from "./sections/ContactSection";
 export default function Home() {
   return (
     <div className="relative flex min-h-screen w-full flex-col">
-      <main className="flex-grow">
+      <main className="grow">
         {/* hero-section */}
         <HeroSection />
         {/* System Architecture section */}
