@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import IdeEditor from "../components/IdeEditor";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ const HeroSection = () => {
           style={{ scale, opacity }}
           className="mt-20 w-full px-4"
         >
-          <Image
+          {/*  <Image
             className="mx-auto w-full max-w-3xl rounded-xl"
             data-alt="An abstract, high-quality 3D rendering of interconnected metallic and crystalline structures, representing high-performance engineering concepts. The visual has no background and appears to float against the page."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5eQiKyo08HWksXuiUN7N4ck8TnNvLEpWzxfoBzgqFjXO1nZSflpH71dIdwnOHLBS6B9YTE_pYUIX6aMTOAdxZyRDoYdjxW73g4E5P6wY1TZNd3GdeKBrNDI8rJI_JofwuFc_qqEvUPt55CKrsQW-Mbz1ndQCCeoYNTh-Vn6Q36oZ1zbu065LWipfxdVUiW3Rn9uefNcfGVUN_0ihmB5RyWd6hV2PvN68luxJvdDVI2bw5CznZwm0-9XlOGBncALKUwbWQzUNE2ZQ"
@@ -44,7 +45,8 @@ const HeroSection = () => {
             width={100}
             height={100}
             unoptimized
-          />
+          /> */}
+          <IdeEditor />
         </motion.div>
       </div>
     </section>
