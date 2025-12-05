@@ -94,7 +94,7 @@ const IdeEditor = () => {
 
   return (
     <Editor
-      height="80vh"
+      height="700px"
       defaultLanguage="javascript"
       value={displayedCode}
       theme="vs-dark"
