@@ -1,7 +1,18 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const HeroSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+
   return (
     <section className="flex flex-col items-center justify-center px-4 py-24 text-center md:py-32">
       <div className="flex max-w-5xl flex-col items-center gap-10">
@@ -20,7 +31,11 @@ const HeroSection = () => {
         <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 text-base font-semibold leading-normal text-white transition-all bg-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
           <span>View Documentation</span>
         </button>
-        <div className="mt-20 w-full px-4">
+        <motion.div
+          ref={containerRef}
+          style={{ scale, opacity }}
+          className="mt-20 w-full px-4"
+        >
           <Image
             className="mx-auto w-full max-w-3xl rounded-xl"
             data-alt="An abstract, high-quality 3D rendering of interconnected metallic and crystalline structures, representing high-performance engineering concepts. The visual has no background and appears to float against the page."
@@ -28,8 +43,9 @@ const HeroSection = () => {
             alt=""
             width={100}
             height={100}
+            unoptimized
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

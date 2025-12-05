@@ -1,5 +1,6 @@
 import { Linkedin, Mail } from "lucide-react";
 import React from "react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const ContactSection = () => {
   return (
@@ -7,7 +8,7 @@ const ContactSection = () => {
       className="w-full bg-background-light py-24 dark:bg-background-dark md:py-40"
       id="contact"
     >
-      <div className="mx-auto flex max-w-4xl flex-col items-center gap-12 px-4 md:gap-16">
+      <ScrollReveal className="mx-auto flex max-w-4xl flex-col items-center gap-12 px-4 md:gap-16">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2 className="sf-display text-5xl font-black tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7] md:text-7xl">
             Get in Touch.
@@ -53,7 +54,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 };

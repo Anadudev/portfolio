@@ -8,6 +8,7 @@ import {
   Server,
 } from "lucide-react";
 import React from "react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const ArchitectureSection = () => {
   return (
@@ -15,7 +16,7 @@ const ArchitectureSection = () => {
       className="w-full bg-[#f9f9f9] py-24 dark:bg-[#1C1C1E] md:py-40"
       id="architecture"
     >
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-16 px-4">
+      <ScrollReveal className="mx-auto flex max-w-6xl flex-col items-center gap-16 px-4">
         <div className="flex max-w-3xl flex-col items-center gap-4 text-center">
           <h2 className="sf-display text-5xl font-black tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7] md:text-7xl">
             System Architecture.
@@ -121,7 +122,7 @@ const ArchitectureSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 };
