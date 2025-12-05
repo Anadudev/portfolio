@@ -1,62 +1,36 @@
-# Anadu Portfolio
-
-A personal portfolio website built with Next.js and Tailwind CSS.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-To get started with this project, follow these steps:
+First, run the development server:
 
-1. Clone the repository: `git clone https://github.com/anadudev/portfolio.git`
-2. Install dependencies: `npm install` or `yarn install`
-3. Start the development server: `npm run dev` or `yarn dev`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Project Structure
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project is built using Next.js and is organized into the following directories:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### app
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Contains the main application code, including pages, components, and utilities.
+## Learn More
 
-### components
+To learn more about Next.js, take a look at the following resources:
 
-Contains reusable UI components.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### data
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Contains data used throughout the application, including projects, tags, and social media links.
+## Deploy on Vercel
 
-### lib
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Contains utility functions used throughout the application.
-
-### sections
-
-Contains larger sections of the application, including the hero section, about section, and projects section.
-
-### types
-
-Contains type definitions for the application.
-
-## Features
-
-* Personal portfolio website with a hero section, about section, and projects section.
-* Uses Next.js for server-side rendering and static site generation.
-* Uses Tailwind CSS for styling.
-* Includes a projects section with infinite scrolling and filtering by tag.
-* Includes a tools section with a list of technologies used in the project.
-
-## Dependencies
-
-* Next.js: ^14.2.15
-* React: ^18
-* React DOM: ^18
-* React Icons: ^5.3.0
-* React Tooltip: ^5.28.0
-* Swiper: ^11.1.14
-* Tailwind CSS: ^3.4.1
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

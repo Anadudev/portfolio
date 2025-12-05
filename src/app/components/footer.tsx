@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div className='h-40 flex justify-center py-9 items-end dark:text-white text-slate-500 text-sm '><p>&copy; Copyright {new Date().getFullYear()} Anadudev</p></div>
-    )
-}
+  return (
+    <footer className="flex w-full items-center justify-center px-5 py-10">
+      <p className="text-sm font-normal text-gray-500 dark:text-gray-500">
+        Designed &amp; Engineered by Anadu Godwin.
+      </p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
