@@ -34,8 +34,10 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-2">
           <Link
+            href="https://github.com/anadudev"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full bg-black px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-            href="#contact"
           >
             <Github size={15} />
             Github
