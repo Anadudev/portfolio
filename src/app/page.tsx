@@ -4,6 +4,7 @@ import ArchitectureSection from "./sections/ArchitectureSection";
 import StackSection from "./sections/StackSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import ContactSection from "./sections/ContactSection";
+import ChatWindow from "./components/chat/chatWindow";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <ExperienceSection />
         {/* Contact section */}
         <ContactSection />
+        {/* Chat window */}
+        <ChatWindow />
       </main>
     </div>
   );
