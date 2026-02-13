@@ -101,7 +101,11 @@ const ChatWindow = () => {
   };
 
   return (
-    <div className="fixed bottom-3 right-3 sm:bottom-10 sm:right-10 z-50">
+    <div
+      className={clsx("fixed bottom-3 right-3 sm:bottom-10 sm:right-10 z-50", {
+        "bottom-26": !open,
+      })}
+    >
       {open && (
         <div
           className="absolute bg-black bottom-0 right-0 w-[calc(100vw-2rem)] h-[calc(100vh-10rem)] sm:w-[380px] sm:h-[580px] border border-border-gray/50 rounded-2xl flex flex-col shadow-2xl overflow-hidden transition-all duration-300 origin-bottom-right scale-100 opacity-100"
