@@ -104,10 +104,10 @@ const ChatWindow = () => {
   copyText("Hello, world!");
 
   return (
-    <div className="fixed bottom-10 right-10 z-50">
+    <div className="fixed bottom-3 right-3 sm:bottom-10 sm:right-10 z-50">
       {open && (
         <div
-          className="absolute bg-black bottom-0 right-0 w-[380px] h-[580px] border border-border-gray/50 rounded-2xl flex flex-col shadow-2xl overflow-hidden transition-all duration-300 origin-bottom-right scale-100 opacity-100"
+          className="absolute bg-black bottom-0 right-0 w-[calc(100vw-2rem)] h-[calc(100vh-10rem)] sm:w-[380px] sm:h-[580px] border border-border-gray/50 rounded-2xl flex flex-col shadow-2xl overflow-hidden transition-all duration-300 origin-bottom-right scale-100 opacity-100"
           data-purpose="chat-ui"
           id="chat-window"
         >
@@ -239,7 +239,7 @@ const ChatWindow = () => {
         <button
           onClick={toggleOpen}
           className={clsx(
-            "w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-zinc-200 transition-all shadow-xl hover:scale-110 active:scale-95 cursor-pointer",
+            "w-8 h-8 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center hover:bg-zinc-200 transition-all shadow-xl hover:scale-110 active:scale-95 cursor-pointer",
             {
               "animate-pulse": !open,
             },
