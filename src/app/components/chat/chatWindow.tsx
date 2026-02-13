@@ -9,6 +9,7 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Message {
   role: "user" | "assistant";
@@ -17,6 +18,7 @@ interface Message {
 
 const ChatWindow = () => {
   const [open, setOpen] = React.useState(false);
+  const [showBubble, setShowBubble] = React.useState(false);
   const [inputValue, setInputValue] = React.useState("");
   const [messages, setMessages] = React.useState<Message[]>([
     {
@@ -38,8 +40,17 @@ const ChatWindow = () => {
     }
   }, [messages, open]);
 
+  useEffect(() => {
+    // Show bubble after a short delay on mount
+    const timer = setTimeout(() => {
+      setShowBubble(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   const toggleOpen = () => {
     setOpen(!open);
+    if (!open) setShowBubble(false);
   };
 
   const mutation = useMutation({
@@ -237,17 +248,43 @@ const ChatWindow = () => {
         </div>
       )}
       {!open && (
-        <button
-          onClick={toggleOpen}
-          className={clsx(
-            "w-8 h-8 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center hover:bg-zinc-200 transition-all shadow-xl hover:scale-110 active:scale-95 cursor-pointer",
-            {
-              "animate-pulse": !open,
-            },
-          )}
-        >
-          <Sparkles className="text-black" size={24} strokeWidth={2.5} />
-        </button>
+        <div className="relative">
+          <AnimatePresence>
+            {showBubble && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, y: 10, x: 0 }}
+                animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 10, x: 0 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-white text-black text-xs sm:text-sm font-semibold rounded-2xl shadow-[0_10px_40px_-10px_rgba(255,255,255,0.2)] whitespace-nowrap border border-zinc-200 flex items-center gap-2 z-[60]"
+              >
+                <div className="absolute -bottom-1.5 right-4 w-3 h-3 bg-white rotate-45 border-b border-r border-zinc-200" />
+                <Sparkles size={16} className="text-zinc-500 hidden sm:block" />
+                <span>Hi! How can I help?</span>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowBubble(false);
+                  }}
+                  className="ml-1 p-0.5 hover:bg-zinc-100 rounded-full transition-colors cursor-pointer"
+                >
+                  <X size={14} className="text-zinc-400 hover:text-zinc-600" />
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <button
+            onClick={toggleOpen}
+            className={clsx(
+              "w-8 h-8 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center hover:bg-zinc-200 transition-all shadow-xl hover:scale-110 active:scale-95 cursor-pointer",
+              {
+                "animate-pulse": !open && !showBubble,
+              },
+            )}
+          >
+            <Sparkles className="text-black" size={24} strokeWidth={2.5} />
+          </button>
+        </div>
       )}
     </div>
   );
