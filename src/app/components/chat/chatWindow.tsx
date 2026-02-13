@@ -100,9 +100,6 @@ const ChatWindow = () => {
       });
   };
 
-  // Example usage:
-  copyText("Hello, world!");
-
   return (
     <div className="fixed bottom-3 right-3 sm:bottom-10 sm:right-10 z-50">
       {open && (
