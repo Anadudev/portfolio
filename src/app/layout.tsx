@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
+import Script from "next/script";
 import Providers from "./Providers";
 
 const geistSans = Geist({
@@ -32,6 +33,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background-light dark:bg-background-dark font-display text-[#1D1D1F] dark:text-[#F5F5F7] background-lines`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3QC6TMP665"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3QC6TMP665');
+          `}
+        </Script>
         <Providers>
           <Header />
           {children}

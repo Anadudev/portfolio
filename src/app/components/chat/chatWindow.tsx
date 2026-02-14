@@ -256,7 +256,7 @@ const ChatWindow = () => {
                 animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
                 exit={{ opacity: 0, scale: 0.8, y: 10, x: 0 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-white text-black text-xs sm:text-sm font-semibold rounded-2xl shadow-[0_10px_40px_-10px_rgba(255,255,255,0.2)] whitespace-nowrap border border-zinc-200 flex items-center gap-2 z-[60]"
+                className="absolute bottom-full right-0 mb-3 px-3 py-2 bg-white text-black text-xs sm:text-sm font-semibold rounded-2xl shadow-[0_10px_40px_-10px_rgba(255,255,255,0.2)] whitespace-nowrap border border-zinc-200 flex items-center gap-2 z-60"
               >
                 <div className="absolute -bottom-1.5 right-4 w-3 h-3 bg-white rotate-45 border-b border-r border-zinc-200" />
                 <Sparkles size={16} className="text-zinc-500 hidden sm:block" />
