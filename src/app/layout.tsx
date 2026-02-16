@@ -33,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background-light dark:bg-background-dark font-display text-[#1D1D1F] dark:text-[#F5F5F7] background-lines`}
       >
+        <script src="https://t.contentsquare.net/uxa/efdfc6acdcd82.js"></script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3QC6TMP665"
           strategy="afterInteractive"
