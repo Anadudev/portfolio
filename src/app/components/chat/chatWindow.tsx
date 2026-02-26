@@ -109,7 +109,7 @@ const ChatWindow = () => {
           autoClose: 2000,
           hideProgressBar: true,
           closeOnClick: true,
-          pauseOnHover: true,
+          pauseOnHover: false,
           draggable: true,
           theme: "dark",
         });
@@ -301,7 +301,7 @@ const ChatWindow = () => {
           </button>
         </motion.div>
       )}
-      <ToastContainer />
+      <ToastContainer position="bottom-right" autoClose={2000} />
     </div>
   );
 };
