@@ -35,4 +35,7 @@ export const Stacks = [
   {
     title: "PostgreSQL",
   },
+  {
+    title: "n8n",
+  },
 ];

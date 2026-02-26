@@ -68,6 +68,7 @@ Languages & AI: TypeScript, Node.js, Python, C, Generative AI Integration, LLM C
 Backend & Architecture: NestJS, Microservices Design, Distributed Systems, Event-Driven Architecture, GraphQL 
 Infrastructure & DevOps: AWS (EC2), Docker, Nginx (Load Balancing), CI/CD (GitHub Actions), Linux. 
 Data & Storage: PostgreSQL, MongoDB, Redis (Caching), Database Design.
+AI & Automation: N8N, OpenAI API, Gemini,
 Professional Experience________________________________________
 
 Software Engineer | Contigo | Contract	                                                                       July 2025 - Sept 2025

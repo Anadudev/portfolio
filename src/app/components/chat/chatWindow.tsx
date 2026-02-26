@@ -104,10 +104,20 @@ const ChatWindow = () => {
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        toast.success("Text copied to clipboard");
+        toast.success("Text copied to clipboard", {
+          position: "bottom-right",
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "dark",
+        });
       })
       .catch((err) => {
-        toast.error("Failed to copy text");
+        toast.error("Failed to copy text", {
+          theme: "dark",
+        });
       });
   };
 
@@ -248,7 +258,12 @@ const ChatWindow = () => {
         </div>
       )}
       {!open && (
-        <div className="relative">
+        <motion.div
+          drag
+          dragElastic={0.1}
+          dragMomentum={false}
+          className="relative pointer-events-auto cursor-grab active:cursor-grabbing"
+        >
           <AnimatePresence>
             {showBubble && (
               <motion.div
@@ -284,8 +299,9 @@ const ChatWindow = () => {
           >
             <Sparkles className="text-black" size={24} strokeWidth={2.5} />
           </button>
-        </div>
+        </motion.div>
       )}
+      <ToastContainer />
     </div>
   );
 };
