@@ -18,7 +18,7 @@ export const Stacks: StackItem[] = [
     description:
       "Architecting scalable, modular microservices with robust server-side logic and TypeScript efficiency.",
     category: "BACKEND",
-    tags: ["CURRENT FOCUS"],
+    tags: ["ACTIVE"],
   },
   {
     title: "React",
@@ -77,25 +77,39 @@ export const Stacks: StackItem[] = [
     tags: ["CORE"],
   },
   {
+    title: "Django",
+    description:
+      "Architecting scalable, modular microservices with robust server-side logic and TypeScript efficiency.",
+    category: "BACKEND",
+    tags: ["ACTIVE"],
+  },
+  {
+    title: "FastAPI",
+    description:
+      "Architecting scalable, modular microservices with robust server-side logic and TypeScript efficiency.",
+    category: "BACKEND",
+    tags: ["ACTIVE"],
+  },
+  {
     title: "RabbitMQ",
     description:
       "Architecting scalable, modular microservices with robust server-side logic and TypeScript efficiency.",
     category: "BACKEND",
-    tags: ["CORE"],
+    tags: ["ACTIVE", "CURRENT FOCUS"],
   },
   {
     title: "Redis",
     description:
       "Architecting scalable, modular microservices with robust server-side logic and TypeScript efficiency.",
     category: "BACKEND",
-    tags: ["CURRENT FOCUS"],
+    tags: ["ACTIVE", "CURRENT FOCUS"],
   },
   {
     title: "Kubernetes",
     description:
       "Architecting scalable, modular microservices with robust server-side logic and TypeScript efficiency.",
     category: "DEVOPS",
-    tags: ["CURRENT FOCUS"],
+    tags: ["ACTIVE", "CURRENT FOCUS"],
   },
   {
     title: "Tailwind CSS",
@@ -116,7 +130,7 @@ export const Stacks: StackItem[] = [
     description:
       "Automating workflows and integrating systems with a powerful, open-source automation platform.",
     category: "AUTOMATION",
-    tags: ["CURRENT FOCUS"],
+    tags: ["ACTIVE"],
   },
   {
     title: "Git",
