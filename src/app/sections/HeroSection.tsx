@@ -1,11 +1,14 @@
 "use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import IdeEditor from "../components/IdeEditor";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isEditorOpen, setIsEditorOpen] = useState(false);
+
+  const toggleEditor = () => setIsEditorOpen(!isEditorOpen);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
@@ -29,9 +32,13 @@ const HeroSection = () => {
             atomic architecture, and high-performance backend solutions.
           </h2>
         </div>
-        <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 text-base font-semibold leading-normal text-white transition-all bg-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-          <span>View Documentation</span>
+        <button
+          onClick={toggleEditor}
+          className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 text-base font-semibold leading-normal text-white transition-all bg-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+        >
+          <span>{isEditorOpen ? "Close" : "View"} Documentation</span>
         </button>
+
         <motion.div
           ref={containerRef}
           style={{ scale, opacity }}
@@ -46,9 +53,7 @@ const HeroSection = () => {
             height={100}
             unoptimized
           />
-          <div className="hidden md:block">
-            <IdeEditor />
-          </div>
+          <div className="hidden md:block">{isEditorOpen && <IdeEditor />}</div>
         </motion.div>
       </div>
     </section>
